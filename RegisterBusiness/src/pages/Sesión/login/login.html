@@ -1,0 +1,39 @@
+<!--
+  Generated template for the LoginPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content padding class="fondo">
+  <div class="animated slow bounceInDown delay-500ms">
+    <img class="mediana" src="../../../assets/imgs/logo.png">
+  </div>
+
+
+  <br />
+  <form [formGroup]="loginForm" (ngSubmit)="submitLogin()" class="button-content">
+    <ion-list>
+      <ion-item>
+        <ion-input type="email" placeholder="Correo institucional" formControlName="email"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input type="password" placeholder="Contraseña" formControlName="password"></ion-input>
+      </ion-item>
+    </ion-list>
+    <div padding>
+      <button type="submit" ion-button outline round color="green" [disabled]="loginForm.invalid">Iniciar
+        sesion</button>
+      <button type="button" ion-button outline round color="green" (click)="aRegister()">Registrar</button>
+    </div>
+  </form>
+
+
+
+</ion-content>

@@ -1,0 +1,356 @@
+<!--
+  Generated template for the Test1Page page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>test1</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <ion-card>
+    <ion-card-header class="card-title">Sección 1</ion-card-header>
+    <ion-card-content>Responde <strong>SI</strong> o <strong>NO</strong> a cada pregunta en relacion con el primer
+      componente de seguridad.</ion-card-content>
+
+    <ion-item>
+      <ion-label>Mostrar Mensaje</ion-label>
+      <ion-checkbox [(ngModel)]="mostrarMensaje">Mostrar Mensaje</ion-checkbox>
+    </ion-item>
+
+    <div class="content-button">
+      <button ion-button outline round color="green" (click)="accion1()">
+        {{ !ocultar1 ? 'Ver preguntas' : 'Ocultar preguntas' }}
+      </button>
+    </div>
+    <ion-card-content *ngIf="ocultar1">
+
+      <ion-item-divider color="light">Pregunta 1</ion-item-divider>
+      <h2>¿Sabe Hablar?</h2>
+      <ion-list radio-group [(ngModel)]="rp1_1" (ionChange)="actualizarRespuesta()">
+        <ion-item>
+          <ion-label>SI</ion-label>
+          <ion-radio value="1">Si</ion-radio>
+        </ion-item>
+        <ion-item>
+          <ion-label>NO</ion-label>
+          <ion-radio value="0">No</ion-radio>
+        </ion-item>
+      </ion-list>
+
+      <ion-item-divider color="light">Pregunta 2</ion-item-divider>
+
+      <h2>¿Sabe caminar?</h2>
+      <ion-list radio-group [(ngModel)]="rp2_1" (ionChange)="actualizarRespuesta()">
+        <ion-item>
+          <ion-label>SI</ion-label>
+          <ion-radio value="1">SI</ion-radio>
+        </ion-item>
+        <ion-item>
+          <ion-label>NO</ion-label>
+          <ion-radio value="0">NO</ion-radio>
+        </ion-item>
+      </ion-list>
+
+      <ion-item-divider color="light">Pregunta 3</ion-item-divider>
+
+      <h2>¿Sabe hablar?</h2>
+      <ion-list radio-group [(ngModel)]="rp3_1" (ionChange)="actualizarRespuesta()">
+        <ion-item>
+          <ion-label>SI</ion-label>
+          <ion-radio value="1">SI</ion-radio>
+        </ion-item>
+        <ion-item>
+          <ion-label>NO</ion-label>
+          <ion-radio value="0">NO</ion-radio>
+        </ion-item>
+      </ion-list>
+
+      <ion-item-divider color="light">Pregunta 4</ion-item-divider>
+
+      <h2>¿Sabe comer?</h2>
+      <ion-list radio-group [(ngModel)]="rp4_1" (ionChange)="actualizarRespuesta()">
+        <ion-item>
+          <ion-label>SI</ion-label>
+          <ion-radio value="1">SI</ion-radio>
+        </ion-item>
+        <ion-item>
+          <ion-label>NO</ion-label>
+          <ion-radio value="0">NO</ion-radio>
+        </ion-item>
+      </ion-list>
+
+      <ion-item-divider color="light">Pregunta 5</ion-item-divider>
+
+      <h2>¿Sabe bailar?</h2>
+      <ion-list radio-group [(ngModel)]="rp5_1" (ionChange)="actualizarRespuesta()">
+        <ion-item>
+          <ion-label>SI</ion-label>
+          <ion-radio value="1">SI</ion-radio>
+        </ion-item>
+        <ion-item>
+          <ion-label>NO</ion-label>
+          <ion-radio value="0">NO</ion-radio>
+        </ion-item>
+      </ion-list>
+
+      <ion-item-divider color="light">Pregunta 6</ion-item-divider>
+
+      <h2>¿Sabe escribir?</h2>
+      <ion-list radio-group [(ngModel)]="rp6_1" (ionChange)="actualizarRespuesta()">
+        <ion-item>
+          <ion-label>SI</ion-label>
+          <ion-radio value="1">SI</ion-radio>
+        </ion-item>
+        <ion-item>
+          <ion-label>NO</ion-label>
+          <ion-radio value="0">NO</ion-radio>
+        </ion-item>
+      </ion-list>
+
+      <ion-item-divider color="light">Pregunta 7</ion-item-divider>
+
+      <h2>¿Sabe leer?</h2>
+      <ion-list radio-group [(ngModel)]="rp7_1" (ionChange)="actualizarRespuesta()">
+        <ion-item>
+          <ion-label>SI</ion-label>
+          <ion-radio value="1">SI</ion-radio>
+        </ion-item>
+        <ion-item>
+          <ion-label>NO</ion-label>
+          <ion-radio value="0">NO</ion-radio>
+        </ion-item>
+      </ion-list>
+
+      <ion-item-divider color="light">Pregunta 8</ion-item-divider>
+
+      <h2>¿Sabe correr?</h2>
+      <ion-list radio-group [(ngModel)]="rp8_1" (ionChange)="actualizarRespuesta()">
+        <ion-item>
+          <ion-label>SI</ion-label>
+          <ion-radio value="1">SI</ion-radio>
+        </ion-item>
+        <ion-item>
+          <ion-label>NO</ion-label>
+          <ion-radio value="0">NO</ion-radio>
+        </ion-item>
+      </ion-list>
+
+      <ion-item-divider color="light">Pregunta 9</ion-item-divider>
+
+      <h2>¿Sabe gritar?</h2>
+      <ion-list radio-group [(ngModel)]="rp9_1" (ionChange)="actualizarRespuesta()">
+        <ion-item>
+          <ion-label>SI</ion-label>
+          <ion-radio value="1">SI</ion-radio>
+        </ion-item>
+        <ion-item>
+          <ion-label>NO</ion-label>
+          <ion-radio value="0">NO</ion-radio>
+        </ion-item>
+      </ion-list>
+
+      <ion-item-divider color="light">Pregunta 10</ion-item-divider>
+
+      <h2>¿Sabe interpretar?</h2>
+      <ion-list radio-group [(ngModel)]="rp10_1" (ionChange)="actualizarRespuesta()">
+        <ion-item>
+          <ion-label>SI</ion-label>
+          <ion-radio value="1">SI</ion-radio>
+        </ion-item>
+        <ion-item>
+          <ion-label>NO</ion-label>
+          <ion-radio value="0">NO</ion-radio>
+        </ion-item>
+      </ion-list>
+
+    </ion-card-content>
+
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header class="card-title">Sección 2</ion-card-header>
+    <ion-card-content>Responde <strong>SI</strong> o <strong>NO</strong> a cada pregunta en relacion con el segundo
+      componente de seguridad.</ion-card-content>
+
+    <ion-item>
+      <ion-label>Mostrar Mensaje</ion-label>
+      <ion-checkbox [(ngModel)]="mostrarMensaje">Mostrar Mensaje</ion-checkbox>
+    </ion-item>
+
+    <div class="content-button">
+      <button ion-button outline round color="green" (click)="accion2()">
+        {{ !ocultar2 ? 'Ver preguntas' : 'Ocultar preguntas' }}
+      </button>
+    </div>
+    <ion-card-content *ngIf="ocultar2">
+     
+       <ion-item-divider color="light">Pregunta 1</ion-item-divider>
+      <h2>¿Sabe Hablar?</h2>
+      <ion-list radio-group [(ngModel)]="rp1_2" (ionChange)="actualizarRespuesta()">
+        <ion-item>
+          <ion-label>SI</ion-label>
+          <ion-radio value="1">Si</ion-radio>
+        </ion-item>
+        <ion-item>
+          <ion-label>NO</ion-label>
+          <ion-radio value="0">No</ion-radio>
+        </ion-item>
+      </ion-list>
+
+      <ion-item-divider color="light">Pregunta 2</ion-item-divider>
+
+      <h2>¿Sabe caminar?</h2>
+      <ion-list radio-group [(ngModel)]="rp2_2" (ionChange)="actualizarRespuesta()">
+        <ion-item>
+          <ion-label>SI</ion-label>
+          <ion-radio value="1">SI</ion-radio>
+        </ion-item>
+        <ion-item>
+          <ion-label>NO</ion-label>
+          <ion-radio value="0">NO</ion-radio>
+        </ion-item>
+      </ion-list>
+
+      <ion-item-divider color="light">Pregunta 3</ion-item-divider>
+
+      <h2>¿Sabe hablar?</h2>
+      <ion-list radio-group [(ngModel)]="rp3_2" (ionChange)="actualizarRespuesta()">
+        <ion-item>
+          <ion-label>SI</ion-label>
+          <ion-radio value="1">SI</ion-radio>
+        </ion-item>
+        <ion-item>
+          <ion-label>NO</ion-label>
+          <ion-radio value="0">NO</ion-radio>
+        </ion-item>
+      </ion-list>
+
+      <ion-item-divider color="light">Pregunta 4</ion-item-divider>
+
+      <h2>¿Sabe comer?</h2>
+      <ion-list radio-group [(ngModel)]="rp4_2" (ionChange)="actualizarRespuesta()">
+        <ion-item>
+          <ion-label>SI</ion-label>
+          <ion-radio value="1">SI</ion-radio>
+        </ion-item>
+        <ion-item>
+          <ion-label>NO</ion-label>
+          <ion-radio value="0">NO</ion-radio>
+        </ion-item>
+      </ion-list>
+
+      <ion-item-divider color="light">Pregunta 5</ion-item-divider>
+
+      <h2>¿Sabe bailar?</h2>
+      <ion-list radio-group [(ngModel)]="rp5_2" (ionChange)="actualizarRespuesta()">
+        <ion-item>
+          <ion-label>SI</ion-label>
+          <ion-radio value="1">SI</ion-radio>
+        </ion-item>
+        <ion-item>
+          <ion-label>NO</ion-label>
+          <ion-radio value="0">NO</ion-radio>
+        </ion-item>
+      </ion-list>
+
+      <ion-item-divider color="light">Pregunta 6</ion-item-divider>
+
+      <h2>¿Sabe escribir?</h2>
+      <ion-list radio-group [(ngModel)]="rp6_2" (ionChange)="actualizarRespuesta()">
+        <ion-item>
+          <ion-label>SI</ion-label>
+          <ion-radio value="1">SI</ion-radio>
+        </ion-item>
+        <ion-item>
+          <ion-label>NO</ion-label>
+          <ion-radio value="0">NO</ion-radio>
+        </ion-item>
+      </ion-list>
+
+      <ion-item-divider color="light">Pregunta 7</ion-item-divider>
+
+      <h2>¿Sabe leer?</h2>
+      <ion-list radio-group [(ngModel)]="rp7_2" (ionChange)="actualizarRespuesta()">
+        <ion-item>
+          <ion-label>SI</ion-label>
+          <ion-radio value="1">SI</ion-radio>
+        </ion-item>
+        <ion-item>
+          <ion-label>NO</ion-label>
+          <ion-radio value="0">NO</ion-radio>
+        </ion-item>
+      </ion-list>
+
+      <ion-item-divider color="light">Pregunta 8</ion-item-divider>
+
+      <h2>¿Sabe correr?</h2>
+      <ion-list radio-group [(ngModel)]="rp8_2" (ionChange)="actualizarRespuesta()">
+        <ion-item>
+          <ion-label>SI</ion-label>
+          <ion-radio value="1">SI</ion-radio>
+        </ion-item>
+        <ion-item>
+          <ion-label>NO</ion-label>
+          <ion-radio value="0">NO</ion-radio>
+        </ion-item>
+      </ion-list>
+
+      <ion-item-divider color="light">Pregunta 9</ion-item-divider>
+
+      <h2>¿Sabe gritar?</h2>
+      <ion-list radio-group [(ngModel)]="rp9_2" (ionChange)="actualizarRespuesta()">
+        <ion-item>
+          <ion-label>SI</ion-label>
+          <ion-radio value="1">SI</ion-radio>
+        </ion-item>
+        <ion-item>
+          <ion-label>NO</ion-label>
+          <ion-radio value="0">NO</ion-radio>
+        </ion-item>
+      </ion-list>
+
+      <ion-item-divider color="light">Pregunta 10</ion-item-divider>
+
+      <h2>¿Sabe interpretar?</h2>
+      <ion-list radio-group [(ngModel)]="rp10_2" (ionChange)="actualizarRespuesta()">
+        <ion-item>
+          <ion-label>SI</ion-label>
+          <ion-radio value="1">SI</ion-radio>
+        </ion-item>
+        <ion-item>
+          <ion-label>NO</ion-label>
+          <ion-radio value="0">NO</ion-radio>
+        </ion-item>
+      </ion-list>
+
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>
+
+
+
+
+
+
+<!--
+      <ion-title>Pregunta 1</ion-title>
+  
+      
+        <ion-label>Si</ion-label>
+        <ion-checkbox type="checkbox" [(ngModel)]="respuesta.positiva" name="positiva" color="dark" checked="false"
+          value="si"></ion-checkbox>
+    
+    
+        <ion-label>No</ion-label>
+        <ion-checkbox type="checked" [(ngModel)]="respuesta.negativa" name="negativa" color="dark" checked="false"
+          value="no"></ion-checkbox>
+    -->

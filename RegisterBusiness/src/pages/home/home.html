@@ -1,0 +1,50 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>Home</ion-title>
+    <ion-buttons end>
+      <!--Poner la funcion de cerrar sesion y volver a home-->
+      <button ion-button (click)="singOut()">
+        <ion-chip style="background: #ffff">
+          <ion-avatar slot="end">
+            <img src="../../assets/icon/favicon.ico">
+          </ion-avatar>
+          <ion-label>Salir</ion-label>
+        </ion-chip>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="fondo">
+
+  <ion-card>
+    <ion-card-content>
+      <ion-card-title class="card-title">Empresas</ion-card-title>
+      <p class="card-subtitle">Gestiona empresas</p>
+    </ion-card-content>
+    <div class="content-button">
+      <button ion-button outline round (click)="aGestionEmpresas()">Gestionar empresas</button>
+    </div>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-content>
+      <ion-card-title class="card-title">Realizar Test</ion-card-title>
+      <p class="card-subtitle">Selecciona test a realizar</p>
+    </ion-card-content>
+    <div class="content-button">
+      <button ion-button outline round (click)="aSelecTest()">Realizar test</button>
+    </div>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-content>
+      <ion-card-title class="card-title">Estadisticas</ion-card-title>
+      <p class="card-subtitle">Genera estariditicas</p>
+    </ion-card-content>
+    <div class="content-button">
+      <button ion-button outline round (click)="aResultados()">Ver resultados</button>
+    </div>
+  </ion-card>
+
+</ion-content>
